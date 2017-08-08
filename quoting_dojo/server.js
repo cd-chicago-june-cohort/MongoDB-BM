@@ -2,7 +2,9 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 var mongoose = require('mongoose');
+
 port = 8000;
+
 var app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -41,13 +43,13 @@ app.post('/quotes', function(req, res){
   });
 });
 
-// app.post('/remove', function(req, res) {
-//     console.log("REMOVE ROUTE HIT")
-//     Quote.remove(req.body, function(err) {
-//         if(err) {console.log(err); }
-//         res.redirect('/quotes');
-//     });
-// });
+app.post('/remove', function(req, res) {
+    console.log("REMOVE ROUTE HIT")
+    Quote.remove(req.body, function(err) {
+        if(err) {console.log(err); }
+        res.redirect('/quotes');
+    });
+});
 
 app.listen(8000, function() {
     console.log("The World is listening on port 8000");
