@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+	font-family: sans-serif;
+}
+
+input, textarea{
+	display: block;
+	margin-bottom: 2em;
+}
+
+h5, .comment_input {
+	margin-left: 12%;
+}
+#post {
+	color:white;
+	background-color: gray;
+	width:200px;
+	height: 40px;
+}
+.comment_text {
+	width: 40%;
+	height: 6em;
+	margin-left: 12%; 
+}
+.margin{
+	margin-left: 12%;
+	margin-bottom: -.1em;
+}
+.post2 {
+	color:white;
+	background-color: gray;
+	margin-left: 33.2%;
+	width:200px;
+	height: 40px;
+}
